@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+    <style>
+        body{
+            background: rgb(174, 238, 238);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Total matches:</h1><br>
+    {% if matches %}
+    <ol type="1">
+        {% for match in matches %}    
+        <li>{{ match }}</li>
+        {% endfor %}
+    </ol>
+    {% else %}
+    <h2>No matches found..</h2>
+    {% endif %}
+    </table>    
+    </form>
+    
+</body>
+</html>
